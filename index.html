@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A transparent dashboard for an autonomous AI experiment to earn and spend real money without speculative risk.">
+    <meta name="theme-color" content="#0a2419">
+    <title>One Euro Lab</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to dashboard</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="One Euro Lab home">
+        <span class="brand-mark" aria-hidden="true">€</span>
+        <span>One Euro Lab</span>
+      </a>
+      <p class="updated" id="updated">Loading current status…</p>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <p class="kicker">A transparent autonomous-agent experiment</p>
+          <h1 id="hero-title">Earn one honest euro.<br><span>Then pay the bills.</span></h1>
+          <p class="hero-copy">Can an AI agent earn and spend its own money, outperform a 2.1% return on €50.21, and do it without gambling founder capital? This page records the evidence.</p>
+        </div>
+        <div class="status-card" aria-live="polite">
+          <div class="status-row">
+            <span class="status-dot" aria-hidden="true"></span>
+            <strong id="status-label">Loading</strong>
+          </div>
+          <p id="status-description">Reading the public experiment ledger.</p>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Experiment totals">
+        <div class="metric metric-primary">
+          <span>Verified net result</span>
+          <strong id="net-result">€0.00</strong>
+          <small id="net-caption">No proceeds verified yet</small>
+        </div>
+        <div class="metric">
+          <span>Target to beat</span>
+          <strong id="target-result">€1.06</strong>
+          <small id="target-caption">One-year baseline: €1.05441</small>
+        </div>
+        <div class="metric">
+          <span>Founder budget offered</span>
+          <strong id="founder-budget">€50.21</strong>
+          <small id="budget-caption">€0.00 funded or committed</small>
+        </div>
+      </section>
+
+      <section class="progress-section" aria-labelledby="progress-title">
+        <div class="section-heading inline-heading">
+          <div>
+            <p class="eyebrow">Measured, not marketed</p>
+            <h2 id="progress-title">Progress toward the benchmark</h2>
+          </div>
+          <strong id="progress-percent">0%</strong>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="progress-note" id="progress-note">€1.06 remains.</p>
+      </section>
+
+      <section class="action-card" aria-labelledby="action-title">
+        <div class="action-accent" aria-hidden="true"></div>
+        <div class="action-content">
+          <p class="eyebrow" id="action-eyebrow">Your next step</p>
+          <h2 id="action-title">Loading next action…</h2>
+          <p class="action-summary" id="action-summary"></p>
+          <ol class="steps" id="action-steps"></ol>
+          <div class="button-row">
+            <a class="button button-primary" id="primary-cta" href="#">Open official page</a>
+            <a class="button button-secondary" id="secondary-cta" href="#">Read terms</a>
+          </div>
+          <div class="checkpoint">
+            <div>
+              <strong>Finished identity verification?</strong>
+              <p>Return to this Codex conversation and send the checkpoint message.</p>
+            </div>
+            <button class="copy-button" id="copy-message" type="button">Copy “account open” message</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel setup-panel" id="vps-checklist" aria-labelledby="setup-title">
+        <div class="section-heading">
+          <p class="eyebrow">Provisioning checklist</p>
+          <h2 id="setup-title">Give the agent a safe place to operate</h2>
+        </div>
+        <div class="spec-grid">
+          <div><span>Recommended VPS</span><strong id="recommended-spec">—</strong></div>
+          <div><span>Operating system</span><strong id="operating-system">—</strong></div>
+          <div><span>Region</span><strong id="server-region">—</strong></div>
+          <div><span>Access</span><strong id="network-access">—</strong></div>
+        </div>
+        <div class="cost-note">
+          <div><span>Estimated monthly cost</span><strong id="monthly-cost">—</strong></div>
+          <p id="runway-note"></p>
+        </div>
+        <div class="browser-note">
+          <span aria-hidden="true">◎</span>
+          <div><strong>Full browser capability without a display</strong><p id="browser-capability"></p></div>
+        </div>
+        <div class="key-box">
+          <div>
+            <p class="eyebrow">Paste into the provider's SSH-key field</p>
+            <code id="ssh-public-key">Loading public key…</code>
+            <small id="ssh-fingerprint"></small>
+          </div>
+          <button class="button key-copy" id="copy-ssh-key" type="button">Copy public key</button>
+        </div>
+        <p class="key-safety"><strong>This is a public key, so it is safe to paste into the VPS control panel.</strong> The matching private key is stored locally with mode 600 and is not in this repository.</p>
+        <h3>What Codex will do after receiving the IP and SSH username</h3>
+        <ol class="after-list" id="after-provisioning"></ol>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel" aria-labelledby="earning-rules-title">
+          <p class="eyebrow">Accounting boundary</p>
+          <h2 id="earning-rules-title">What counts as money earned</h2>
+          <h3>Counts</h3>
+          <ul class="check-list" id="earning-counts"></ul>
+          <h3>Never counts</h3>
+          <ul class="excluded-list" id="earning-excluded"></ul>
+          <p class="warning">The test is intentionally strict: the agent must create value for an independent party and retain more than €1.05441 after its attributable operating expenses.</p>
+        </section>
+
+        <section class="panel" aria-labelledby="safety-title">
+          <p class="eyebrow">Hard boundaries</p>
+          <h2 id="safety-title">Safety rules</h2>
+          <ul class="shield-list" id="safety-list"></ul>
+          <p class="privacy-note"><strong>Never put secrets here.</strong> This dashboard is public. It must contain no bank details, IDs, passwords, PINs, recovery codes, or wallet keys.</p>
+        </section>
+      </div>
+
+      <section class="panel pipeline-panel" aria-labelledby="pipeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Opportunity log</p>
+          <h2 id="pipeline-title">What has been tried</h2>
+        </div>
+        <div class="pipeline" id="pipeline"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="ledger-title">
+        <div class="section-heading inline-heading">
+          <div>
+            <p class="eyebrow">Cash evidence</p>
+            <h2 id="ledger-title">Verified ledger</h2>
+          </div>
+          <span class="ledger-badge">Public</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Type</th><th>Description</th><th>Inflow</th><th>Outflow</th><th>Eligible</th><th>Evidence</th></tr></thead>
+            <tbody id="transactions"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="sources" aria-labelledby="sources-title">
+        <h2 id="sources-title">Primary sources</h2>
+        <div id="sources-list" class="source-links"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built and maintained by Codex, an AI agent, under private human oversight.</p>
+      <a href="https://github.com/one-euro-agent/one-euro-lab">View source on GitHub</a>
+    </footer>
+  </body>
+</html>

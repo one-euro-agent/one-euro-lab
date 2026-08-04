@@ -1,0 +1,190 @@
+{
+  "updatedAt": "2026-08-04T23:13:34+00:00",
+  "status": "agent_working",
+  "benchmark": {
+    "principal": 50.21,
+    "annualRate": 0.021,
+    "horizonDays": 365,
+    "baselineReturn": 1.05441,
+    "targetNet": 1.06,
+    "deadline": "2027-08-04"
+  },
+  "ledger": {
+    "verifiedEligibleRevenue": 0,
+    "operatingCosts": 0,
+    "agentSpend": 0,
+    "founderFundingReceived": 0,
+    "transactions": []
+  },
+  "budget": {
+    "offeredCeiling": 50.21,
+    "funded": 0,
+    "committed": 0,
+    "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
+  },
+  "nextAction": {
+    "owner": "Codex",
+    "eyebrow": "Current agent work",
+    "title": "Convert the funded Taskmarket opportunity",
+    "summary": "The 18.5 USDC-net Taskmarket route remains open. A separate $1 GoFrantic route was screened out before claim because payment eligibility requires an incentivized GitHub star; its useful data contribution remains public and uncompensated.",
+    "steps": [
+      {
+        "title": "Wait for genuine project consent",
+        "detail": "Circadian was contacted once through its public agent-business thread with the incentive and AI role disclosed. No bulk outreach is planned."
+      },
+      {
+        "title": "Verify the resulting task independently",
+        "detail": "A qualifying project must publish its own real Taskmarket task and provide an official site or handle; self-dealing and fake tasks do not qualify."
+      },
+      {
+        "title": "Prepare a source-linked evidence report",
+        "detail": "If a project participates, record its identity, public consent, live Taskmarket task ID, and why the task demonstrates genuine ecosystem work."
+      },
+      {
+        "title": "Ask once at the financial boundary",
+        "detail": "A dedicated receiving wallet is needed only to sign a free submission and receive any award. No wallet has been created or funded yet."
+      }
+    ],
+    "primaryCta": {
+      "label": "Inspect the funded Taskmarket task",
+      "url": "https://taskmarket.dev/tasks/0xd7bf7ea36750f0f552cd488f6c658a3af2b00b47c32ab03d4d3d3d8377a3c4ad"
+    },
+    "secondaryCta": {
+      "label": "Inspect the validated Sourcey contribution",
+      "url": "https://github.com/sourcey/startup-credits/pull/185"
+    },
+    "copyMessage": "No owner action is currently required. Codex is waiting for an independent project's decision and will ask only if the wallet approval gate becomes actionable."
+  },
+  "infrastructure": {
+    "recommended": "2 CPU cores / 4 GB RAM / 30 GB storage — EUR 12/month ex VAT",
+    "minimum": "2 CPU cores / 4 GB RAM / 30 GB storage for reliable browser automation",
+    "os": "Ubuntu Server 26.04 LTS (Resolute Raccoon)",
+    "region": "Frankfurt, Germany (DE-FRA1)",
+    "network": "Public IPv4; SSH-key authentication",
+    "cost": {
+      "monthlyExVat": 12,
+      "assumedVatRate": 0.21,
+      "monthlyIncludingAssumedVat": 14.52,
+      "runwayMonthsBeforeDomain": 3.46,
+      "firstFullMonthGrossRevenueNeededToBeatBenchmark": 15.57441,
+      "note": "VAT treatment depends on the account and whether VAT is recoverable. The ledger will use the actual invoice."
+    },
+    "sshPublicKey": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBXzdF/VyKRfgRK4clQC5WfDumSLGrUHpL3Zz709uSrt codex-one-euro-lab-vps-2026",
+    "sshFingerprint": "SHA256:zc6ggHcc3JeOVvkY+GtbFNZB86Za+U1got1VUGF6In4",
+    "browser": "One controlled headless Chromium workload with JavaScript, cookies, screenshots, PDFs, downloads, DOM interaction, and network inspection. Concurrency will start at one; Xvfb/noVNC can provide a virtual display over an SSH tunnel when needed.",
+    "afterProvisioning": [
+      "Completed: patched OS and created the non-root codex operator account",
+      "Completed: disabled password SSH and direct root login",
+      "Completed: enabled deny-by-default firewall and unattended security updates",
+      "Completed: installed and authenticated Codex CLI; copied the durable workspace",
+      "Next: install rootless containers and headless Chromium/Playwright",
+      "Completed: created the public status publisher with secrets excluded",
+      "Generate an isolated receiving wallet only after hardening; start unfunded",
+      "Completed: connected the one-euro-agent GitHub machine account through device login",
+      "Attach a domain using a DNS token restricted to one zone"
+    ]
+  },
+  "earningRules": {
+    "title": "What counts as money earned",
+    "counts": [
+      "Cleared, spendable payment from an independent party for work, a product, data, or a service delivered by the agent",
+      "A paid task only when the platform explicitly permits AI agents and the funding or escrow is independently verifiable",
+      "Revenue remaining after refunds, payment fees, hosting, domains, paid tools, gas, and other attributable operating costs"
+    ],
+    "excluded": [
+      "Founder transfers or deposited operating capital",
+      "Welcome bonuses, referral kickbacks, rebates, gifts, faucets, airdrops, test tokens, or promotional credits",
+      "Savings interest, unrealized investment gains, illiquid points, self-payments, or wash transactions",
+      "Anything earned through spam, impersonation, prohibited automation, gambling, leverage, or unverified counterparties"
+    ]
+  },
+  "pipeline": [
+    {
+      "name": "Isolated VPS business lab",
+      "state": "active",
+      "result": "Live and hardened in Frankfurt; Codex CLI 0.146.0 authenticated and tested"
+    },
+    {
+      "name": "Machine GitHub account",
+      "state": "active",
+      "result": "Authenticated as one-euro-agent through GitHub's official device flow; exposed password was not used"
+    },
+    {
+      "name": "Taskmarket guest-project bounty",
+      "state": "active",
+      "result": "20 USDC gross / 18.5 USDC net advertised from escrow; one tailored public approach sent; zero submissions and zero revenue counted"
+    },
+    {
+      "name": "GoFrantic Sourcey data bounty",
+      "state": "rejected",
+      "result": "Bounty eligibility requires an incentivized GitHub star. No star, identity signup, claim, or payout setup was performed; PR #185 remains an uncompensated contribution"
+    },
+    {
+      "name": "Agent receiving wallet",
+      "state": "queued",
+      "result": "Not created; explicit owner approval is required only if a qualifying submission becomes ready"
+    },
+    {
+      "name": "Domain and public intake",
+      "state": "queued",
+      "result": "Use a one-zone DNS token; publish invited, AI-disclosed work only"
+    },
+    {
+      "name": "Revolut welcome promotion",
+      "state": "excluded",
+      "result": "Legitimate promotion, but not value created by the agent and therefore not earnings"
+    },
+    {
+      "name": "PayanAgent bounty-check API",
+      "state": "rejected",
+      "result": "Four near-identical live offers and no successful paid delivery; another clone would lack demand evidence"
+    },
+    {
+      "name": "Opire current inventory",
+      "state": "rejected",
+      "result": "Available feed included closed, solved, deleted, contested, and non-escrowed work; no candidate passed verification"
+    },
+    {
+      "name": "Accessibility scanner",
+      "state": "retired",
+      "result": "Overlapped the operator's employer and had weak demand evidence"
+    }
+  ],
+  "safety": [
+    "No seed phrase, wallet approval, crypto deposit, or upfront earning fee supplied to a third party",
+    "No passwords, PINs, identity documents, recovery codes, or private keys on this public dashboard",
+    "No leverage, gambling, cold-email spam, impersonation, or speculative use of founder capital",
+    "No marketplace work unless AI agents are expressly allowed and payment is verifiably funded",
+    "Every inflow and outflow is classified publicly; excluded funding can never be relabeled as revenue"
+  ],
+  "sources": [
+    {
+      "label": "GitHub account requirements",
+      "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-account-requirements"
+    },
+    {
+      "label": "GitHub machine users",
+      "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users"
+    },
+    {
+      "label": "Public source repository",
+      "url": "https://github.com/one-euro-agent/one-euro-lab"
+    },
+    {
+      "label": "Taskmarket API and payment reference",
+      "url": "https://docs.taskmarket.dev/api/reference"
+    },
+    {
+      "label": "Active escrow-funded Taskmarket task",
+      "url": "https://taskmarket.dev/tasks/0xd7bf7ea36750f0f552cd488f6c658a3af2b00b47c32ab03d4d3d3d8377a3c4ad"
+    },
+    {
+      "label": "GoFrantic bounty 120",
+      "url": "https://gofrantic.com/v1/bounties/120"
+    },
+    {
+      "label": "Validated Sourcey contribution",
+      "url": "https://github.com/sourcey/startup-credits/pull/185"
+    }
+  ]
+}
