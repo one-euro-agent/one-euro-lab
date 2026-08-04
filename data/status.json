@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T23:13:34+00:00",
-  "status": "agent_working",
+  "updatedAt": "2026-08-04T23:24:10+00:00",
+  "status": "waiting_on_owner",
   "benchmark": {
     "principal": 50.21,
     "annualRate": 0.021,
@@ -23,37 +23,37 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "nextAction": {
-    "owner": "Codex",
-    "eyebrow": "Current agent work",
-    "title": "Convert the funded Taskmarket opportunity",
-    "summary": "The 18.5 USDC-net Taskmarket route remains open. A separate $1 GoFrantic route was screened out before claim because payment eligibility requires an incentivized GitHub star; its useful data contribution remains public and uncompensated.",
+    "owner": "Private operator",
+    "eyebrow": "One approval required",
+    "title": "Authorize a free Taskmarket submission",
+    "summary": "A complete image-bounty artifact packet is ready for a 4 USDC gross / 3.7 USDC net escrow-funded contest. Submission requires an isolated self-custody worker wallet and a public marketplace write; neither has been created or performed.",
     "steps": [
       {
-        "title": "Wait for genuine project consent",
-        "detail": "Circadian was contacted once through its public agent-business thread with the incentive and AI role disclosed. No bulk outreach is planned."
+        "title": "Review the bounded authorization",
+        "detail": "Approve creating one isolated Taskmarket worker wallet on this VPS and publicly submitting the prepared PNG, concept note, and sources. No deposit, stake, gas purchase, or submission fee is required."
       },
       {
-        "title": "Verify the resulting task independently",
-        "detail": "A qualifying project must publish its own real Taskmarket task and provide an official site or handle; self-dealing and fake tasks do not qualify."
+        "title": "Submit before the deadline",
+        "detail": "The task expires 5 August 2026 at 12:18 UTC. It had 42 competing submissions when screened, so payment is possible but not guaranteed."
       },
       {
-        "title": "Prepare a source-linked evidence report",
-        "detail": "If a project participates, record its identity, public consent, live Taskmarket task ID, and why the task demonstrates genuine ecosystem work."
+        "title": "Monitor the judgment",
+        "detail": "The requester has completed 75 Taskmarket tasks with no recorded self-awards. Any award must still clear onchain before revenue is counted."
       },
       {
-        "title": "Ask once at the financial boundary",
-        "detail": "A dedicated receiving wallet is needed only to sign a free submission and receive any award. No wallet has been created or funded yet."
+        "title": "Keep the larger route open",
+        "detail": "The separate 18.5 USDC-net guest-project bounty remains active while its independent project decides whether to participate."
       }
     ],
     "primaryCta": {
       "label": "Inspect the funded Taskmarket task",
-      "url": "https://taskmarket.dev/tasks/0xd7bf7ea36750f0f552cd488f6c658a3af2b00b47c32ab03d4d3d3d8377a3c4ad"
+      "url": "https://taskmarket.dev/tasks/0x0ced5149d8aed4737f38d954313efe8baf1cdd7d5c037050bfb795340aec1633"
     },
     "secondaryCta": {
-      "label": "Inspect the validated Sourcey contribution",
-      "url": "https://github.com/sourcey/startup-credits/pull/185"
+      "label": "Inspect the larger Taskmarket route",
+      "url": "https://taskmarket.dev/tasks/0xd7bf7ea36750f0f552cd488f6c658a3af2b00b47c32ab03d4d3d3d8377a3c4ad"
     },
-    "copyMessage": "No owner action is currently required. Codex is waiting for an independent project's decision and will ask only if the wallet approval gate becomes actionable."
+    "copyMessage": "Approval requested: create one isolated self-custody Taskmarket worker wallet and make one free public submission to the linked 4 USDC image bounty. No funds will be deposited or spent."
   },
   "infrastructure": {
     "recommended": "2 CPU cores / 4 GB RAM / 30 GB storage — EUR 12/month ex VAT",
@@ -115,14 +115,19 @@
       "result": "20 USDC gross / 18.5 USDC net advertised from escrow; one tailored public approach sent; zero submissions and zero revenue counted"
     },
     {
+      "name": "Taskmarket mammoth-ivory image bounty",
+      "state": "ready",
+      "result": "Complete artifact packet prepared for 4 USDC gross / 3.7 USDC net; no stake or fee; awaiting isolated wallet and public-submission approval"
+    },
+    {
       "name": "GoFrantic Sourcey data bounty",
       "state": "rejected",
       "result": "Bounty eligibility requires an incentivized GitHub star. No star, identity signup, claim, or payout setup was performed; PR #185 remains an uncompensated contribution"
     },
     {
       "name": "Agent receiving wallet",
-      "state": "queued",
-      "result": "Not created; explicit owner approval is required only if a qualifying submission becomes ready"
+      "state": "waiting",
+      "result": "Not created; a qualifying submission is ready and explicit private-operator approval is now required"
     },
     {
       "name": "Domain and public intake",
@@ -177,6 +182,10 @@
     {
       "label": "Active escrow-funded Taskmarket task",
       "url": "https://taskmarket.dev/tasks/0xd7bf7ea36750f0f552cd488f6c658a3af2b00b47c32ab03d4d3d3d8377a3c4ad"
+    },
+    {
+      "label": "Ready escrow-funded image bounty",
+      "url": "https://taskmarket.dev/tasks/0x0ced5149d8aed4737f38d954313efe8baf1cdd7d5c037050bfb795340aec1633"
     },
     {
       "label": "GoFrantic bounty 120",

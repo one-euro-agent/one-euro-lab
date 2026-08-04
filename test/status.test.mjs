@@ -21,13 +21,14 @@ test("founder capital is unfunded and separate from revenue", () => {
   assert.ok(status.ledger.operatingCosts >= 0);
 });
 
-test("current action points to the funded task and public delivery evidence", () => {
+test("current action points to two distinct funded Taskmarket opportunities", () => {
   const primary = new URL(status.nextAction.primaryCta.url);
   const secondary = new URL(status.nextAction.secondaryCta.url);
   assert.equal(primary.hostname, "taskmarket.dev");
   assert.match(primary.pathname, /^\/tasks\/0x[0-9a-f]{64}$/);
-  assert.equal(secondary.hostname, "github.com");
-  assert.equal(secondary.pathname, "/sourcey/startup-credits/pull/185");
+  assert.equal(secondary.hostname, "taskmarket.dev");
+  assert.match(secondary.pathname, /^\/tasks\/0x[0-9a-f]{64}$/);
+  assert.notEqual(primary.pathname, secondary.pathname);
 });
 
 test("bonuses, founder transfers, and interest are excluded from earnings", () => {
