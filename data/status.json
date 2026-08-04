@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T23:24:10+00:00",
+  "updatedAt": "2026-08-04T23:29:45+00:00",
   "status": "waiting_on_owner",
   "benchmark": {
     "principal": 50.21,
@@ -25,16 +25,16 @@
   "nextAction": {
     "owner": "Private operator",
     "eyebrow": "One approval required",
-    "title": "Authorize a free Taskmarket submission",
-    "summary": "A complete image-bounty artifact packet is ready for a 4 USDC gross / 3.7 USDC net escrow-funded contest. Submission requires an isolated self-custody worker wallet and a public marketplace write; neither has been created or performed.",
+    "title": "Authorize two free Taskmarket submissions",
+    "summary": "Two complete image-bounty artifact packets are ready for separate escrow-funded contests, each advertising 4 USDC gross / 3.7 USDC net. Submission requires one isolated self-custody worker wallet and two public marketplace writes; none has been created or performed.",
     "steps": [
       {
         "title": "Review the bounded authorization",
-        "detail": "Approve creating one isolated Taskmarket worker wallet on this VPS and publicly submitting the prepared PNG, concept note, and sources. No deposit, stake, gas purchase, or submission fee is required."
+        "detail": "Approve creating one isolated Taskmarket worker wallet on this VPS and publicly submitting both prepared PNG, concept-note, and source packets. No deposit, stake, gas purchase, or submission fee is required."
       },
       {
         "title": "Submit before the deadline",
-        "detail": "The task expires 5 August 2026 at 12:18 UTC. It had 42 competing submissions when screened, so payment is possible but not guaranteed."
+        "detail": "Both tasks expire 5 August 2026 at 12:18 UTC. They had 42 and 34 competing submissions when screened, so payment is possible but not guaranteed."
       },
       {
         "title": "Monitor the judgment",
@@ -50,10 +50,10 @@
       "url": "https://taskmarket.dev/tasks/0x0ced5149d8aed4737f38d954313efe8baf1cdd7d5c037050bfb795340aec1633"
     },
     "secondaryCta": {
-      "label": "Inspect the larger Taskmarket route",
-      "url": "https://taskmarket.dev/tasks/0xd7bf7ea36750f0f552cd488f6c658a3af2b00b47c32ab03d4d3d3d8377a3c4ad"
+      "label": "Inspect the second ready image bounty",
+      "url": "https://taskmarket.dev/tasks/0x11616c4a959758b611e71e243b0718b7430bb6f69d6a0d53daeb7b97b0f4e05d"
     },
-    "copyMessage": "Approval requested: create one isolated self-custody Taskmarket worker wallet and make one free public submission to the linked 4 USDC image bounty. No funds will be deposited or spent."
+    "copyMessage": "Approval requested: create one isolated self-custody Taskmarket worker wallet and make two free public submissions to the linked 4 USDC image bounties. No funds will be deposited or spent."
   },
   "infrastructure": {
     "recommended": "2 CPU cores / 4 GB RAM / 30 GB storage — EUR 12/month ex VAT",
@@ -118,6 +118,11 @@
       "name": "Taskmarket mammoth-ivory image bounty",
       "state": "ready",
       "result": "Complete artifact packet prepared for 4 USDC gross / 3.7 USDC net; no stake or fee; awaiting isolated wallet and public-submission approval"
+    },
+    {
+      "name": "Taskmarket Nysa confidence-diagram bounty",
+      "state": "ready",
+      "result": "Complete 4:3 artifact packet prepared for 4 USDC gross / 3.7 USDC net; 34 competing submissions at screening; no stake or fee; awaiting the same bounded approval"
     },
     {
       "name": "GoFrantic Sourcey data bounty",
@@ -186,6 +191,10 @@
     {
       "label": "Ready escrow-funded image bounty",
       "url": "https://taskmarket.dev/tasks/0x0ced5149d8aed4737f38d954313efe8baf1cdd7d5c037050bfb795340aec1633"
+    },
+    {
+      "label": "Second ready escrow-funded image bounty",
+      "url": "https://taskmarket.dev/tasks/0x11616c4a959758b611e71e243b0718b7430bb6f69d6a0d53daeb7b97b0f4e05d"
     },
     {
       "label": "GoFrantic bounty 120",

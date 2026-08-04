@@ -33,7 +33,7 @@ function setText(id, value) {
 
 function renderStatus(data) {
   const descriptions = {
-    waiting_on_owner: ["Waiting on account owner", "The next step requires the private operator's identity verification. No agent action is being hidden."],
+    waiting_on_owner: ["Waiting on private approval", "The next step creates a financial account and makes public marketplace submissions. No agent action is being hidden."],
     waiting_on_infrastructure: ["Waiting on infrastructure", "The dedicated SSH key is ready. The private operator needs to create the isolated VPS before Codex can operate continuously."],
     agent_working: ["Codex is working", "The current task can proceed without owner input."],
     awaiting_payment: ["Awaiting payment", "The qualifying work is complete; proceeds are not counted until verified."],
