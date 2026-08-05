@@ -16,7 +16,15 @@ const date = new Intl.DateTimeFormat("en-GB", {
   day: "numeric",
   month: "short",
   year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
+  timeZone: "UTC",
 });
+
+function formatTimestamp(value) {
+  return `${date.format(new Date(value))} UTC`;
+}
 
 function externalLink(anchor, link) {
   anchor.href = link.url;
@@ -42,7 +50,9 @@ function renderStatus(data) {
   const [label, description] = descriptions[data.status] || ["Status unknown", "Review the public ledger for details."];
   setText("status-label", label);
   setText("status-description", description);
-  setText("updated", `Verified ${date.format(new Date(data.updatedAt))}`);
+  const updated = document.getElementById("updated");
+  updated.dateTime = data.updatedAt;
+  updated.textContent = `Verified ${formatTimestamp(data.updatedAt)}`;
 }
 
 function renderMetrics(data) {
@@ -95,35 +105,6 @@ function renderAction(action) {
   });
 }
 
-function renderInfrastructure(infrastructure) {
-  setText("recommended-spec", infrastructure.recommended);
-  setText("operating-system", infrastructure.os);
-  setText("server-region", infrastructure.region);
-  setText("network-access", infrastructure.network);
-  setText("monthly-cost", `${shortMoney.format(infrastructure.cost.monthlyIncludingAssumedVat)} incl. assumed VAT`);
-  setText("runway-note", `${infrastructure.cost.runwayMonthsBeforeDomain.toFixed(2)} months of the offered budget before domain costs; first full-month gross target ${money.format(infrastructure.cost.firstFullMonthGrossRevenueNeededToBeatBenchmark)}.`);
-  setText("browser-capability", infrastructure.browser);
-  setText("ssh-public-key", infrastructure.sshPublicKey);
-  setText("ssh-fingerprint", `Fingerprint: ${infrastructure.sshFingerprint}`);
-
-  const after = document.getElementById("after-provisioning");
-  infrastructure.afterProvisioning.forEach((task) => {
-    const item = document.createElement("li");
-    item.textContent = task;
-    after.append(item);
-  });
-
-  const copy = document.getElementById("copy-ssh-key");
-  copy.addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText(infrastructure.sshPublicKey);
-      copy.textContent = "Public key copied";
-    } catch {
-      copy.textContent = "Select and copy the key";
-    }
-  });
-}
-
 function renderEarningRules(rules) {
   setText("earning-rules-title", rules.title);
   const counts = document.getElementById("earning-counts");
@@ -138,6 +119,24 @@ function renderEarningRules(rules) {
     const item = document.createElement("li");
     item.textContent = rule;
     excluded.append(item);
+  });
+}
+
+function renderActivity(entries) {
+  const activity = document.getElementById("activity");
+  entries.forEach((entry) => {
+    const item = document.createElement("li");
+    const timestamp = document.createElement("time");
+    const copy = document.createElement("div");
+    const title = document.createElement("strong");
+    const detail = document.createElement("p");
+    timestamp.dateTime = entry.at;
+    timestamp.textContent = formatTimestamp(entry.at);
+    title.textContent = entry.title;
+    detail.textContent = entry.detail;
+    copy.append(title, detail);
+    item.append(timestamp, copy);
+    activity.append(item);
   });
 }
 
@@ -222,7 +221,7 @@ async function init() {
     renderStatus(data);
     renderMetrics(data);
     renderAction(data.nextAction);
-    renderInfrastructure(data.infrastructure);
+    renderActivity(data.activity);
     renderEarningRules(data.earningRules);
     renderSafety(data.safety);
     renderPipeline(data.pipeline);

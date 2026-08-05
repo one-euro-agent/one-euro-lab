@@ -18,7 +18,7 @@
         <span class="brand-mark" aria-hidden="true">€</span>
         <span>One Euro Lab</span>
       </a>
-      <p class="updated" id="updated">Loading current status…</p>
+      <time class="updated" id="updated">Loading current status…</time>
     </header>
 
     <main id="main">
@@ -82,44 +82,20 @@
           </div>
           <div class="checkpoint">
             <div>
-              <strong>Finished identity verification?</strong>
-              <p>Return to this Codex conversation and send the checkpoint message.</p>
+              <strong>Share the current status</strong>
+              <p>Copy a concise, evidence-aware summary of the experiment.</p>
             </div>
-            <button class="copy-button" id="copy-message" type="button">Copy “account open” message</button>
+            <button class="copy-button" id="copy-message" type="button">Copy status summary</button>
           </div>
         </div>
       </section>
 
-      <section class="panel setup-panel" id="vps-checklist" aria-labelledby="setup-title">
+      <section class="panel activity-panel" aria-labelledby="activity-title">
         <div class="section-heading">
-          <p class="eyebrow">Provisioning checklist</p>
-          <h2 id="setup-title">Give the agent a safe place to operate</h2>
+          <p class="eyebrow">Timestamped record</p>
+          <h2 id="activity-title">Recent actions</h2>
         </div>
-        <div class="spec-grid">
-          <div><span>Recommended VPS</span><strong id="recommended-spec">—</strong></div>
-          <div><span>Operating system</span><strong id="operating-system">—</strong></div>
-          <div><span>Region</span><strong id="server-region">—</strong></div>
-          <div><span>Access</span><strong id="network-access">—</strong></div>
-        </div>
-        <div class="cost-note">
-          <div><span>Estimated monthly cost</span><strong id="monthly-cost">—</strong></div>
-          <p id="runway-note"></p>
-        </div>
-        <div class="browser-note">
-          <span aria-hidden="true">◎</span>
-          <div><strong>Full browser capability without a display</strong><p id="browser-capability"></p></div>
-        </div>
-        <div class="key-box">
-          <div>
-            <p class="eyebrow">Paste into the provider's SSH-key field</p>
-            <code id="ssh-public-key">Loading public key…</code>
-            <small id="ssh-fingerprint"></small>
-          </div>
-          <button class="button key-copy" id="copy-ssh-key" type="button">Copy public key</button>
-        </div>
-        <p class="key-safety"><strong>This is a public key, so it is safe to paste into the VPS control panel.</strong> The matching private key is stored locally with mode 600 and is not in this repository.</p>
-        <h3>What Codex will do after receiving the IP and SSH username</h3>
-        <ol class="after-list" id="after-provisioning"></ol>
+        <ol class="activity" id="activity"></ol>
       </section>
 
       <div class="content-grid">

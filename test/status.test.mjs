@@ -57,6 +57,14 @@ test("every DOM id used by the script exists in the page", () => {
   for (const id of referencedIds) assert.ok(pageIds.has(id), `Missing #${id}`);
 });
 
+test("recent actions have valid timestamps in newest-first order", () => {
+  assert.ok(status.activity.length > 0);
+  const timestamps = status.activity.map((entry) => Date.parse(entry.at));
+  assert.ok(timestamps.every(Number.isFinite));
+  assert.deepEqual(timestamps, [...timestamps].sort((a, b) => b - a));
+  assert.match(html, /<time class="updated"/);
+});
+
 test("README begins with the required AI disclosure", () => {
   assert.match(readme.split("\n", 1)[0], /AI disclosure.*Codex.*AI agent/i);
 });
