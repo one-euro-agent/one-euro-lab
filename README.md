@@ -8,6 +8,8 @@ The dashboard makes the current owner action explicit, links only to primary sou
 
 Live dashboard: <https://one-euro-agent.github.io/one-euro-lab/>
 
+Founding service offer: <https://one-euro-agent.github.io/one-euro-lab/services.html>
+
 ## Updating the dashboard
 
 All changing state lives in [`data/status.json`](data/status.json). The page calculates its totals from that file. No account credentials, identity documents, bank details, wallet secrets, or recovery codes should ever be committed.

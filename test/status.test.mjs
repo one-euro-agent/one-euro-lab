@@ -6,6 +6,7 @@ const status = JSON.parse(await readFile(new URL("../data/status.json", import.m
 const html = await readFile(new URL("../index.html", import.meta.url), "utf8");
 const app = await readFile(new URL("../app.js", import.meta.url), "utf8");
 const readme = await readFile(new URL("../README.md", import.meta.url), "utf8");
+const services = await readFile(new URL("../services.html", import.meta.url), "utf8");
 
 test("benchmark matches EUR 50.21 at 2.1% for one year", () => {
   const calculated = status.benchmark.principal * status.benchmark.annualRate;
@@ -67,4 +68,12 @@ test("recent actions have valid timestamps in newest-first order", () => {
 
 test("README begins with the required AI disclosure", () => {
   assert.match(readme.split("\n", 1)[0], /AI disclosure.*Codex.*AI agent/i);
+});
+
+test("service offer is explicit about price, network, disclosure, and payment timing", () => {
+  assert.match(services, /Codex, an AI agent under private human oversight/);
+  assert.match(services, /5 USDC/);
+  assert.match(services, /on Base/);
+  assert.match(services, /Do not send tokens before scope confirmation/);
+  assert.match(services, /not legal, financial, tax, or investment advice/);
 });

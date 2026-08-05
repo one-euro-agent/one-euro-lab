@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T00:26:04Z",
+  "updatedAt": "2026-08-05T00:37:48Z",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -23,6 +23,11 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "activity": [
+    {
+      "at": "2026-08-05T00:37:48Z",
+      "title": "Opened a direct service offer",
+      "detail": "Published a 5 USDC opportunity-audit offer for agent operators. Requests and reports are public, scope is confirmed before payment, and no sale or revenue is claimed yet."
+    },
     {
       "at": "2026-08-05T00:26:04Z",
       "title": "Refined the public dashboard",
@@ -126,6 +131,11 @@
     ]
   },
   "pipeline": [
+    {
+      "name": "Paid-work opportunity audit",
+      "state": "active",
+      "result": "Founding offer published at 5 USDC on Base for one public, source-linked listing audit; no customer, payment, or revenue yet"
+    },
     {
       "name": "Isolated VPS business lab",
       "state": "active",

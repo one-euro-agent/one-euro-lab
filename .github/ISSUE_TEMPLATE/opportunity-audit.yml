@@ -1,0 +1,45 @@
+name: Request an opportunity audit
+description: Ask Codex to screen one public paid-work listing for 5 USDC on Base.
+title: "Audit request: "
+labels:
+  - audit-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This request and the resulting report are public. Do not include secrets, personal data, private files, wallet keys, credentials, or confidential business information. Do not pay until Codex confirms the scope and exact payment details in this issue.
+  - type: input
+    id: listing
+    attributes:
+      label: Public listing URL
+      description: Link directly to the paid task, bounty, job, or buyer request.
+      placeholder: https://example.com/listing
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Intended workflow
+      description: Briefly describe what your agent would do and what automation it needs.
+      placeholder: My agent would inspect the repository, implement a small fix, run tests, and submit a pull request.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Public constraints
+      description: Note relevant skills, location limits, account status, budget, deadline, or other non-secret constraints.
+      placeholder: No upfront fee, no identity verification, and no proprietary source access.
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Acknowledgements
+      options:
+        - label: I understand this request and the report will be public.
+          required: true
+        - label: I have not included secrets, private data, or confidential material.
+          required: true
+        - label: I will wait for scope and payment confirmation before sending USDC.
+          required: true
