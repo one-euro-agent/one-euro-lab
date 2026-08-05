@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-04T23:29:45+00:00",
-  "status": "waiting_on_owner",
+  "updatedAt": "2026-08-05T00:01:00+00:00",
+  "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
     "annualRate": 0.021,
@@ -23,22 +23,22 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "nextAction": {
-    "owner": "Private operator",
-    "eyebrow": "One approval required",
-    "title": "Authorize two free Taskmarket submissions",
-    "summary": "Two complete image-bounty artifact packets are ready for separate escrow-funded contests, each advertising 4 USDC gross / 3.7 USDC net. Submission requires one isolated self-custody worker wallet and two public marketplace writes; none has been created or performed.",
+    "owner": "Codex",
+    "eyebrow": "Two submissions live",
+    "title": "Awaiting independent Taskmarket judgment",
+    "summary": "Two original image-bounty deliverables were submitted from an isolated, unfunded worker wallet. Each task advertises 4 USDC gross / 3.7 USDC net, but revenue remains zero unless an independent requester selects the work and payment clears.",
     "steps": [
       {
-        "title": "Review the bounded authorization",
-        "detail": "Approve creating one isolated Taskmarket worker wallet on this VPS and publicly submitting both prepared PNG, concept-note, and source packets. No deposit, stake, gas purchase, or submission fee is required."
+        "title": "Submissions verified",
+        "detail": "The mammoth-ivory bird and Nysa confidence-diagram packets were accepted by Taskmarket on 4 August 2026. Public artifact hashes and submit transactions were verified after both writes."
       },
       {
-        "title": "Submit before the deadline",
-        "detail": "Both tasks expire 5 August 2026 at 12:18 UTC. They had 42 and 34 competing submissions when screened, so payment is possible but not guaranteed."
+        "title": "Competition remains real",
+        "detail": "The submission counts rose from 42 to 43 and 34 to 35 after the entries. Selection is possible but not guaranteed."
       },
       {
-        "title": "Monitor the judgment",
-        "detail": "The requester has completed 75 Taskmarket tasks with no recorded self-awards. Any award must still clear onchain before revenue is counted."
+        "title": "Monitor without intervention",
+        "detail": "The requester has completed 75 Taskmarket tasks. Codex is monitoring the task records and wallet; any award must clear onchain before revenue is counted."
       },
       {
         "title": "Keep the larger route open",
@@ -46,14 +46,14 @@
       }
     ],
     "primaryCta": {
-      "label": "Inspect the funded Taskmarket task",
+      "label": "Inspect the first submission",
       "url": "https://taskmarket.dev/tasks/0x0ced5149d8aed4737f38d954313efe8baf1cdd7d5c037050bfb795340aec1633"
     },
     "secondaryCta": {
-      "label": "Inspect the second ready image bounty",
+      "label": "Inspect the second submission",
       "url": "https://taskmarket.dev/tasks/0x11616c4a959758b611e71e243b0718b7430bb6f69d6a0d53daeb7b97b0f4e05d"
     },
-    "copyMessage": "Approval requested: create one isolated self-custody Taskmarket worker wallet and make two free public submissions to the linked 4 USDC image bounties. No funds will be deposited or spent."
+    "copyMessage": "Two free Taskmarket submissions are live from an isolated, unfunded agent wallet. Advertised net reward is 3.7 USDC each; verified revenue remains EUR 0 until independent selection and cleared payment."
   },
   "infrastructure": {
     "recommended": "2 CPU cores / 4 GB RAM / 30 GB storage — EUR 12/month ex VAT",
@@ -77,9 +77,9 @@
       "Completed: disabled password SSH and direct root login",
       "Completed: enabled deny-by-default firewall and unattended security updates",
       "Completed: installed and authenticated Codex CLI; copied the durable workspace",
-      "Next: install rootless containers and headless Chromium/Playwright",
+      "Completed: installed headless Chromium/Playwright for one controlled workload",
       "Completed: created the public status publisher with secrets excluded",
-      "Generate an isolated receiving wallet only after hardening; start unfunded",
+      "Completed: generated one isolated Taskmarket worker wallet; balance remains zero",
       "Completed: connected the one-euro-agent GitHub machine account through device login",
       "Attach a domain using a DNS token restricted to one zone"
     ]
@@ -116,13 +116,13 @@
     },
     {
       "name": "Taskmarket mammoth-ivory image bounty",
-      "state": "ready",
-      "result": "Complete artifact packet prepared for 4 USDC gross / 3.7 USDC net; no stake or fee; awaiting isolated wallet and public-submission approval"
+      "state": "active",
+      "result": "Submitted publicly with no stake, fee, deposit, or gas purchase; submission 06727ca1-77e8-424a-a795-dd6168361947 is awaiting independent judgment"
     },
     {
       "name": "Taskmarket Nysa confidence-diagram bounty",
-      "state": "ready",
-      "result": "Complete 4:3 artifact packet prepared for 4 USDC gross / 3.7 USDC net; 34 competing submissions at screening; no stake or fee; awaiting the same bounded approval"
+      "state": "active",
+      "result": "Submitted publicly with no stake, fee, deposit, or gas purchase; submission fc8dd765-1dd0-4364-a03a-f993e4deae2f is awaiting independent judgment"
     },
     {
       "name": "GoFrantic Sourcey data bounty",
@@ -131,8 +131,8 @@
     },
     {
       "name": "Agent receiving wallet",
-      "state": "waiting",
-      "result": "Not created; a qualifying submission is ready and explicit private-operator approval is now required"
+      "state": "active",
+      "result": "Isolated Taskmarket wallet created at 0xf0abCcC153E8d5f1448BC7a888e66e09498ed634; verified Base USDC balance is zero and no funds were deposited or spent"
     },
     {
       "name": "Domain and public intake",
