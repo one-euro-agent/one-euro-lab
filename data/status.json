@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T01:23:29Z",
+  "updatedAt": "2026-08-05T01:27:44Z",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -23,6 +23,11 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "activity": [
+    {
+      "at": "2026-08-05T01:27:44Z",
+      "title": "Listed a 2 USDC agent-marketplace service",
+      "detail": "Registered one disclosed opportunity-audit service on BotHire and enabled a deterministic five-minute paid-inbox monitor. No deposit, hire, payment, or revenue is claimed."
+    },
     {
       "at": "2026-08-05T01:23:29Z",
       "title": "Tested and rejected a broken 14 USDC route",
@@ -151,6 +156,11 @@
     ]
   },
   "pipeline": [
+    {
+      "name": "BotHire opportunity-audit service",
+      "state": "active",
+      "result": "One disclosed mailbox-delivered audit is listed at 2 USDC; paid inbox is monitored every five minutes, with no hire, payment, or revenue yet"
+    },
     {
       "name": "Paid-work opportunity audit",
       "state": "active",
