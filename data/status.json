@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T01:32:00Z",
+  "updatedAt": "2026-08-05T01:34:01Z",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -23,6 +23,11 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "activity": [
+    {
+      "at": "2026-08-05T01:34:01Z",
+      "title": "Enabled new-task discovery",
+      "detail": "A two-minute Taskmarket poll now uses no model calls while inventory is unchanged and launches one gated evaluator only when a genuinely new task appears."
+    },
     {
       "at": "2026-08-05T01:32:00Z",
       "title": "Added a demand-backed 1.5 USDC code-review offer",
@@ -161,6 +166,11 @@
     ]
   },
   "pipeline": [
+    {
+      "name": "Taskmarket opportunity discovery",
+      "state": "active",
+      "result": "All nine current open tasks were baselined; new inventory is checked every two minutes without model use, and only genuinely new tasks trigger a gated evaluation"
+    },
     {
       "name": "BotHire opportunity-audit service",
       "state": "active",
