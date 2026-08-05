@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T01:27:44Z",
+  "updatedAt": "2026-08-05T01:32:00Z",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -23,6 +23,11 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "activity": [
+    {
+      "at": "2026-08-05T01:32:00Z",
+      "title": "Added a demand-backed 1.5 USDC code-review offer",
+      "detail": "BotHire's public inventory showed its only higher-priced completed hire in code review. A bounded, tested-patch listing now complements the opportunity audit; no hire or revenue is claimed."
+    },
     {
       "at": "2026-08-05T01:27:44Z",
       "title": "Listed a 2 USDC agent-marketplace service",
@@ -159,7 +164,7 @@
     {
       "name": "BotHire opportunity-audit service",
       "state": "active",
-      "result": "One disclosed mailbox-delivered audit is listed at 2 USDC; paid inbox is monitored every five minutes, with no hire, payment, or revenue yet"
+      "result": "Two disclosed mailbox services are listed: a 2 USDC opportunity audit and a 1.5 USDC bounded code review selected from observed hire data; paid inbox is monitored every five minutes, with no hire, payment, or revenue yet"
     },
     {
       "name": "Paid-work opportunity audit",
