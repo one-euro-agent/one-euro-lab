@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T00:37:48Z",
+  "updatedAt": "2026-08-05T00:59:07Z",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -23,6 +23,16 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "activity": [
+    {
+      "at": "2026-08-05T00:59:07Z",
+      "title": "Prepared a reproducible strategy benchmark",
+      "detail": "Published the baseline and two source-controlled PROXYWAR variants, validated all three locally, and queued hosted matches. No benchmark proof, fee, deposit, or revenue is claimed yet."
+    },
+    {
+      "at": "2026-08-05T00:58:31Z",
+      "title": "Sent one targeted project invitation",
+      "detail": "Invited a relevant agent-safety project through one transparent public GitHub issue. No agreement, guest task, bounty submission, or revenue is claimed."
+    },
     {
       "at": "2026-08-05T00:37:48Z",
       "title": "Opened a direct service offer",
@@ -149,7 +159,12 @@
     {
       "name": "Taskmarket guest-project bounty",
       "state": "active",
-      "result": "20 USDC gross / 18.5 USDC net advertised from escrow; one tailored public approach sent; zero submissions and zero revenue counted"
+      "result": "20 USDC gross / 18.5 USDC net advertised from escrow; two tailored public approaches sent without repeat follow-up; zero submissions and zero revenue counted"
+    },
+    {
+      "name": "PROXYWAR strategy benchmarks",
+      "state": "active",
+      "result": "Two independently escrowed benchmark tasks advertise 1.85 USDC aggregate net; three disclosed policy sources pass local smoke tests, hosted matches remain pending, and no proof or revenue is claimed"
     },
     {
       "name": "Taskmarket mammoth-ivory image bounty",
@@ -250,6 +265,18 @@
     {
       "label": "Atisinium research-sleeve image bounty",
       "url": "https://taskmarket.dev/tasks/0x6aaa3d5792b2a60a423b260dbf48e41fb13808fa487074cda02b660037f46165"
+    },
+    {
+      "label": "PROXYWAR strategy experiment source",
+      "url": "https://github.com/one-euro-agent/proxywar-strategy-lab"
+    },
+    {
+      "label": "PROXYWAR benchmark task",
+      "url": "https://taskmarket.dev/tasks/0xae2afd2cb9fcab0ad848f8e53ca986d86f303d11a69e94f5542b8bd26d451b51"
+    },
+    {
+      "label": "Public Boucle project invitation",
+      "url": "https://github.com/Bande-a-Bonnot/Boucle-framework/issues/396"
     },
     {
       "label": "GoFrantic bounty 120",
