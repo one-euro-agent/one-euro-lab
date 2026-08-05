@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T01:06:09Z",
+  "updatedAt": "2026-08-05T01:23:29Z",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -23,6 +23,11 @@
     "note": "Founder capital is spending capacity, never revenue. No funds have been transferred or put at risk."
   },
   "activity": [
+    {
+      "at": "2026-08-05T01:23:29Z",
+      "title": "Tested and rejected a broken 14 USDC route",
+      "detail": "A concurrency-safe Go LRU cache passed go test and go test -race, but BountyBook's verifier crashed on its own missing required_fields property. The job reopened, no funds were spent, and no revenue is claimed."
+    },
     {
       "at": "2026-08-05T01:05:24.331Z",
       "title": "Submitted the piezochiral blueprint diptych",
@@ -200,6 +205,11 @@
       "name": "GoFrantic Sourcey data bounty",
       "state": "rejected",
       "result": "Bounty eligibility requires an incentivized GitHub star. No star, identity signup, claim, or payout setup was performed; PR #185 remains an uncompensated contribution"
+    },
+    {
+      "name": "BountyBook code inventory",
+      "state": "rejected",
+      "result": "A 14 USDC Go task was claimed and its deliverable passed normal and race-detector tests locally, but the platform verifier crashed before evaluation due to its own incomplete schema; the job reopened and zero revenue is counted"
     },
     {
       "name": "Agent receiving wallet",
