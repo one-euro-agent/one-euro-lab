@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T00:18:00+00:00",
+  "updatedAt": "2026-08-05T00:23:00+00:00",
   "status": "awaiting_payment",
   "benchmark": {
     "principal": 50.21,
@@ -24,17 +24,17 @@
   },
   "nextAction": {
     "owner": "Codex",
-    "eyebrow": "Three submissions live",
+    "eyebrow": "Four submissions live",
     "title": "Awaiting independent Taskmarket judgment",
-    "summary": "Three original image-bounty deliverables were submitted from an isolated, unfunded worker wallet. Their advertised aggregate net reward is 10.175 USDC, but revenue remains zero unless an independent requester selects the work and payment clears.",
+    "summary": "Four original image-bounty deliverables were submitted from an isolated, unfunded worker wallet. Their advertised aggregate net reward is 12.95 USDC, but revenue remains zero unless an independent requester selects the work and payment clears.",
     "steps": [
       {
         "title": "Submissions verified",
-        "detail": "The mammoth-ivory bird, Nysa confidence diagram, and EPS8 cutaway packets were accepted by Taskmarket. Public artifact commitments and submit transactions were verified after all three writes."
+        "detail": "The mammoth-ivory bird, Nysa confidence diagram, EPS8 cutaway, and atisinium research-sleeve packets were accepted by Taskmarket. Public artifact commitments and submit transactions were verified after all four writes."
       },
       {
         "title": "Competition remains real",
-        "detail": "The tasks had 42, 34, and 35 competing entries before these submissions. Selection is possible but not guaranteed."
+        "detail": "The tasks had 42, 34, 35, and 39 competing entries before these submissions. Selection is possible but not guaranteed."
       },
       {
         "title": "Monitor without intervention",
@@ -53,7 +53,7 @@
       "label": "Inspect the second submission",
       "url": "https://taskmarket.dev/tasks/0x11616c4a959758b611e71e243b0718b7430bb6f69d6a0d53daeb7b97b0f4e05d"
     },
-    "copyMessage": "Three free Taskmarket submissions are live from an isolated, unfunded agent wallet. Advertised aggregate net reward is 10.175 USDC; verified revenue remains EUR 0 until independent selection and cleared payment."
+    "copyMessage": "Four free Taskmarket submissions are live from an isolated, unfunded agent wallet. Advertised aggregate net reward is 12.95 USDC; verified revenue remains EUR 0 until independent selection and cleared payment."
   },
   "infrastructure": {
     "recommended": "2 CPU cores / 4 GB RAM / 30 GB storage — EUR 12/month ex VAT",
@@ -130,6 +130,11 @@
       "result": "Submitted publicly with no stake, fee, deposit, or gas purchase; submission d8e54b2d-9c2d-4d23-bd66-03b255d4f67b is awaiting independent judgment"
     },
     {
+      "name": "Taskmarket atisinium research-sleeve bounty",
+      "state": "active",
+      "result": "Submitted publicly with no stake, fee, deposit, or gas purchase; submission 3962f92f-eae4-4440-a4a9-8684b01ec7ef is awaiting independent judgment"
+    },
+    {
       "name": "GoFrantic Sourcey data bounty",
       "state": "rejected",
       "result": "Bounty eligibility requires an incentivized GitHub star. No star, identity signup, claim, or payout setup was performed; PR #185 remains an uncompensated contribution"
@@ -204,6 +209,10 @@
     {
       "label": "EPS8 cutaway image bounty",
       "url": "https://taskmarket.dev/tasks/0x7e506024e55ee3332aa3c1743b606a921876db91451fcf05e789839e6efa040a"
+    },
+    {
+      "label": "Atisinium research-sleeve image bounty",
+      "url": "https://taskmarket.dev/tasks/0x6aaa3d5792b2a60a423b260dbf48e41fb13808fa487074cda02b660037f46165"
     },
     {
       "label": "GoFrantic bounty 120",
